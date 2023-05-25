@@ -1,0 +1,12 @@
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\bin\Debug\netstandard2.0\Persistencia.deps.json
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\bin\Debug\netstandard2.0\Persistencia.dll
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\bin\Debug\netstandard2.0\Persistencia.pdb
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\bin\Debug\netstandard2.0\Dominio.dll
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\bin\Debug\netstandard2.0\Dominio.pdb
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\obj\Debug\netstandard2.0\Persistencia.csprojAssemblyReference.cache
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\obj\Debug\netstandard2.0\Persistencia.csproj.CoreCompileInputs.cache
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\obj\Debug\netstandard2.0\Persistencia.AssemblyInfoInputs.cache
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\obj\Debug\netstandard2.0\Persistencia.AssemblyInfo.cs
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\obj\Debug\netstandard2.0\Persistencia.csproj.CopyComplete
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\obj\Debug\netstandard2.0\Persistencia.dll
+C:\Users\Nataniel Rodriguez\OneDrive - Grupo de Comunicacion Garnier S.A\Desktop\cursoASPNET-NetCore\ProyectoCore\Persistencia\obj\Debug\netstandard2.0\Persistencia.pdb
