@@ -7,7 +7,7 @@ namespace Aplicacion.Documentos
 {
     public class ArchivoGenerico
     {
-        public Guid? UsuarioId {get;set;}
+        public Guid? EntidadId {get;set;}
         public Guid? DocumentoId {get;set;}
         public string Nombre {get;set;}
         public string Data {get;set;}

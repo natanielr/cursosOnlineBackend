@@ -35,7 +35,7 @@ namespace Aplicacion.Seguridad
             {
                 var usuario = await userManager.FindByNameAsync(usuarioSesion.ObtenerUsuarioActual()); // obtiene el usuario de la sesion actual
                 var roles = (await userManager.GetRolesAsync(usuario)).ToList(); // obtener los roles para agregarlos al token
-                var existeImagen = await context.Documento.Where(x => x.UsuarioId == new Guid(usuario.Id)).FirstOrDefaultAsync();
+                var existeImagen = await context.Documento.Where(x => x.EntidadId == new Guid(usuario.Id)).FirstOrDefaultAsync();
                 // y los busca en la bd
 
                 var response = new UsuarioResponse

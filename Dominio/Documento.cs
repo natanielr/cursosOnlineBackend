@@ -9,7 +9,7 @@ namespace Dominio
     {
         public Guid DocumentoId {get;set;}
 
-        public Guid UsuarioId {get;set;}
+        public Guid EntidadId {get;set;}
         public string Nombre {get;set;}
         public string Extension {get;set;}
 

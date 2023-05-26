@@ -79,7 +79,7 @@ namespace Aplicacion.Seguridad
 
                     // traer la imagen
 
-                    var existeImagen = await context.Documento.Where(x => x.UsuarioId == new Guid(usuario.Id)).FirstOrDefaultAsync();
+                    var existeImagen = await context.Documento.Where(x => x.EntidadId == new Guid(usuario.Id)).FirstOrDefaultAsync();
 
                     var response = new UsuarioResponse
                     {

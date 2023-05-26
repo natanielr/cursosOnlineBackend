@@ -13,7 +13,7 @@ namespace Aplicacion.Documentos
     public class ObtenerArchivo
     {
         public class ObtenerArchivoData: IRequest<ArchivoGenerico> {
-            public Guid? UsuarioId {get;set;}
+            public Guid? EntidadId {get;set;}
         }
 
         public class Handler : IRequestHandler<ObtenerArchivoData, ArchivoGenerico>
@@ -26,13 +26,13 @@ namespace Aplicacion.Documentos
 
             public async Task<ArchivoGenerico> Handle(ObtenerArchivoData request, CancellationToken cancellationToken)
             {
-                var documento = await context.Documento.Where(x => x.UsuarioId == request.UsuarioId).FirstOrDefaultAsync();
+                var documento = await context.Documento.Where(x => x.EntidadId == request.EntidadId).FirstOrDefaultAsync();
 
                 if(documento != null) {
 
                     var response = new ArchivoGenerico {
                         DocumentoId = documento.DocumentoId,
-                        UsuarioId = documento.UsuarioId,
+                        EntidadId = documento.EntidadId,
                         Nombre = documento.Nombre,
                         Extension = documento.Extension,
                         Data = Convert.ToBase64String(documento.Contenido) 

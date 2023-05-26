@@ -74,7 +74,7 @@ namespace Aplicacion.Seguridad
 
                 if (request.ImagenPerfil != null)
                 {
-                    var existeImagen = await _context.Documento.Where(x => x.UsuarioId == new Guid(usuario.Id)).FirstOrDefaultAsync();
+                    var existeImagen = await _context.Documento.Where(x => x.EntidadId == new Guid(usuario.Id)).FirstOrDefaultAsync();
 
                     if (existeImagen == null)
                     { // ya tiene una imagen
@@ -83,7 +83,7 @@ namespace Aplicacion.Seguridad
                             Contenido = Convert.FromBase64String(request.ImagenPerfil.Data), // la tabla recibe la imagen en bytes
                             Nombre = request.ImagenPerfil.Nombre,
                             Extension = request.ImagenPerfil.Extension,
-                            UsuarioId = new Guid(usuario.Id),
+                            EntidadId = new Guid(usuario.Id),
                             DocumentoId = Guid.NewGuid(),
                             FechaCreacion = DateTime.UtcNow
                         };
@@ -110,7 +110,7 @@ namespace Aplicacion.Seguridad
                 if (resultado.Succeeded)
                 {
                     var roles = (await _userManager.GetRolesAsync(usuario)).ToList();
-                    var imagenActual = await _context.Documento.Where(x => x.UsuarioId == new Guid(usuario.Id)).FirstOrDefaultAsync();
+                    var imagenActual = await _context.Documento.Where(x => x.EntidadId == new Guid(usuario.Id)).FirstOrDefaultAsync();
 
                     var response = new UsuarioResponse
                     {

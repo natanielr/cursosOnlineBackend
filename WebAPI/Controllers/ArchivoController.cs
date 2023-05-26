@@ -14,10 +14,10 @@ namespace WebAPI.Controllers
             return await mediator.Send(data);
         }
 
-        [HttpGet("{usuarioId}")]
-        public async Task<ActionResult<ArchivoGenerico>> ConsultarArchivo(Guid usuarioId) { 
+        [HttpGet("{entidadId}")]
+        public async Task<ActionResult<ArchivoGenerico>> ConsultarArchivo(Guid entidadId) { 
             return await mediator.Send(new ObtenerArchivo.ObtenerArchivoData {
-                UsuarioId = usuarioId
+                EntidadId = entidadId
             });
         }
     }

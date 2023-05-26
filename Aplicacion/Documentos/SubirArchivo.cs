@@ -18,7 +18,7 @@ namespace Aplicacion.Documentos
         public class SubirArchivoData : IRequest
         {
 
-            public string UsuarioId { get; set; }
+            public string EntidadId { get; set; }
             public string Data { get; set; } // viene en base64 
             public string Nombre { get; set; }
             public string Extension { get; set; }
@@ -34,7 +34,7 @@ namespace Aplicacion.Documentos
             }
             public async Task<Unit> Handle(SubirArchivoData request, CancellationToken cancellationToken)
             {
-                var documento = await context.Documento.Where(x => x.UsuarioId == new Guid(request.UsuarioId)).FirstOrDefaultAsync();
+                var documento = await context.Documento.Where(x => x.EntidadId == new Guid(request.EntidadId)).FirstOrDefaultAsync();
 
                 if (documento == null)
                 {
@@ -45,7 +45,7 @@ namespace Aplicacion.Documentos
                         Extension = request.Extension,
                         DocumentoId = Guid.NewGuid(),
                         FechaCreacion = DateTime.UtcNow,
-                        UsuarioId = new Guid(request.UsuarioId)
+                        EntidadId = new Guid(request.EntidadId)
                     };
 
                     context.Documento.Add(imagen);
